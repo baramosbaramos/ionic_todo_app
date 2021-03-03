@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <p></p>
+    <ion-label color='tertiary'>＜Incompleted＞</ion-label>
+    <p></p>
+    <ion-item *ngFor="let t of tasks; let i = index" [button]="true" (click)="changeTask(i)">
+      <ion-label>・{{t.name}}</ion-label>
+    </ion-item>
+    <p></p>
+    <ion-label color='tertiary'>＜Completed＞</ion-label>
+    <p></p>
+    <ion-item *ngFor="let t of completedtasks; let i = index">
+      <ion-label>・{{t.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button *ngIf="tasks"  class="ion-padding" color='primary' expand="block" (click)="deleteAllTask()"> delete all tasks</ion-button>
+</ion-content>

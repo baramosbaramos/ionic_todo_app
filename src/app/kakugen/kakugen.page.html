@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <p></p>
+  <div class="ion-padding-bottom">
+    <ion-button color='primary' class="ion-padding" expand="block" (click)="checkKakugen()"
+      [disabled]='flg'>push
+    </ion-button>
+  </div>
+  <p></p>
+  <ion-label>{{ kakugen }}</ion-label>
+</ion-content>
