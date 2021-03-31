@@ -1,7 +1,7 @@
 # TODOアプリ
 
 ・使用技術
-開発言語　TypeScript
+<br>開発言語　TypeScript
 フレームワーク　ionic/Angular
 データ格納先　ブラウザのLocalStorageに保存
 
