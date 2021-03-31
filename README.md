@@ -1,4 +1,11 @@
-# ionic_todo_app
+# TODOアプリ
+
+・使用技術
+開発言語　TypeScript
+フレームワーク　ionic/Angular
+データ格納先　ブラウザのLocalStorageに保存
+
+
 ・タスク登録画面
 →completeボタンを押すとタスクが下に移動します
 <img width="1440" alt="スクリーンショット 2021-03-31 19 01 38" src="https://user-images.githubusercontent.com/77732068/113140539-85d9e780-9263-11eb-86b5-1fe17184de75.png">
